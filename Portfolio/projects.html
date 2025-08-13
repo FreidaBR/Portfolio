@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Freida Rodrigues | Portfolio</title>
+
+
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Cuprum:wght@700&family=Figtree:wght@700&family=Poppins:wght@400&family=Libre+Caslon+Text&family=Teko:wght@400&display=swap" rel="stylesheet">
+<style>
+    /\* Reset \*/
+    \* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+
+    body {
+        font-family: 'Poppins', sans-serif;
+        background-color: #000;
+        color: white;
+        line-height: 1.5;
+        scroll-behavior: smooth;
+    }
+
+
+    /\* Navbar \*/
+    nav {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        padding: 1rem;
+        background-color: #1c1c1c;
+        position: sticky;
+        top: 0;
+        z-index: 10;
+    }
+
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        font-family: 'Figtree', sans-serif;
+        font-size: 1.2rem;
+        position: relative;
+    }
+
+
+    nav a::after {
+        content: '';
+        position: absolute;
+        width: 0%;
+        height: 2px;
+        background: #14BF8F;
+        bottom: -5px;
+        left: 0;
+        transition: width 0.3s ease;
+    }
+
+
+    nav a:hover::after {
+        width: 100%;
+    }
+
+
+    /\* Hero \*/
+    .hero {
+        text-align: center;
+        padding: 5rem 2rem;
+        animation: fadeIn 1.5s ease;
+    }
+
+
+    .hero h2 {
+        color: #14BF8F;
+        font-family: 'Cuprum', sans-serif;
+        font-size: 1.5rem;
+    }
+
+
+    .hero h1 {
+        font-family: 'Cuprum', sans-serif;
+        font-size: 4rem;
+        margin-top: 0.5rem;
+    }
+
+
+    .hero p {
+        max-width: 700px;
+        margin: 1rem auto;
+        font-size: 1.2rem;
+    }
+
+
+    /\* Section Headings \*/
+    section h2 {
+        color: #14BF8F;
+        font-family: 'Cuprum', sans-serif;
+        text-align: center;
+        margin-bottom: 1rem;
+        font-size: 2rem;
+    }
+
+
+    /\* Skills \*/
+    .skills {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 1rem;
+        padding: 2rem;
+    }
+
+
+    .skill-card {
+        background: #E0DFDF;
+        color: black;
+        border-radius: 15px;
+        text-align: center;
+        padding: 1rem;
+        font-weight: bold;
+        transition: transform 0.3s ease, background 0.3s ease;
+    }
+
+
+    .skill-card:hover {
+        transform: translateY(-5px);
+        background: #14BF8F;
+        color: white;
+    }
+
+
+    /\* Projects \*/
+    .projects {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+        padding: 2rem;
+    }
+
+
+    .project {
+        background: #E0DFDF;
+        border-radius: 20px;
+        overflow: hidden;
+        transition: transform 0.3s ease;
+    }
+
+
+    .project img {
+        width: 100%;
+        display: block;
+        transition: transform 0.3s ease;
+    }
+
+
+    .project:hover img {
+        transform: scale(1.05);
+    }
+
+
+    .project-info {
+        padding: 1rem;
+        color: black;
+    }
+
+
+    /\* Contact Form \*/
+    .contact {
+        text-align: center;
+        padding: 3rem 1rem;
+    }
+
+
+    .contact form {
+        max-width: 500px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+
+    input, textarea, button {
+        padding: 0.8rem;
+        border-radius: 10px;
+        border: none;
+        outline: none;
+        font-size: 1rem;
+    }
+
+
+    input, textarea {
+        background: #EBD7D0;
+    }
+
+
+    button {
+        background: linear-gradient(90deg, #F8ECE6, #E4AC97);
+        color: black;
+        font-family: 'Teko', sans-serif;
+        font-size: 1.2rem;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+    }
+
+
+    button:hover {
+        transform: translateY(-3px);
+    }
+
+
+    /\* Animations \*/
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+</style>
+</head>
+<body>
+
+
+<!-- Navbar -->
+<nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+
+<!-- Hero -->
+<section class="hero" id="about">
+    <h2>Hi THERE, I’M</h2>
+    <h1>Freida Rodrigues</h1>
+    <p>Hi! I’m Freida, a second-year BTech Computer Science Engineering student at Christ University. I enjoy blending creativity and code—I’m learning HTML, CSS, and just starting out with JavaScript to build simple, aesthetic websites. I’m exploring UI design and slowly diving into UX to better understand how people interact with digital experiences.</p>
+</section>
+
+
+<!-- Skills -->
+<section id="skills">
+    <h2>MY SKILLS</h2>
+    <div class="skills">
+        <div class="skill-card">HTML</div>
+        <div class="skill-card">CSS</div>
+        <div class="skill-card">JavaScript</div>
+        <div class="skill-card">UI/UX</div>
+    </div>
+</section>
+
+
+<!-- Projects -->
+<section id="projects">
+    <h2>MY PROJECTS</h2>
+    <div class="projects">
+        <div class="project">
+            <img src="https://placehold.co/500x300" alt="Pet Grooming">
+            <div class="project-info">
+                <h3>Blazzy - Pet Grooming</h3>
+                <p>Gentle grooming, happy pets. Personalized care to keep your furry friends looking and feeling their best.</p>
+            </div>
+        </div>
+        <div class="project">
+            <img src="https://placehold.co/500x300" alt="Band Website">
+            <div class="project-info">
+                <h3>Dawson Hollow - Band Website</h3>
+                <p>Website redesign project for a band, making it modern and engaging while preserving the original vibe.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Contact -->
+<section class="contact" id="contact">
+    <h2>💬 Like what you see? Drop a comment!</h2>
+    <form>
+        <input type="text" placeholder="Name" required>
+        <input type="email" placeholder="Email" required>
+        <textarea rows="5" placeholder="Comments/Suggestions"></textarea>
+        <button type="submit">SUBMIT</button>
+    </form>
+</section>
+
+
+</body>
+</html> i want u to make the about content to the left and add smthng creative to the right

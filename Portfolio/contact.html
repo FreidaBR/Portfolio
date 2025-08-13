@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Services - Freida B Rodrigues</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    main {
+      max-width: 900px;
+      margin: 100px auto 60px;
+      padding: 0 20px;
+    }
+    h2 {
+      color: #2c3e50;
+      margin-bottom: 25px;
+      font-weight: 700;
+      font-size: 2rem;
+      text-align: center;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: white;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 4px 12px rgba(74, 144, 226, 0.15);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+    }
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 20px rgba(74, 144, 226, 0.3);
+    }
+    .card h3 {
+      color: #4a90e2;
+      margin-bottom: 12px;
+    }
+    .card p {
+      font-size: 0.95rem;
+      color: #566574;
+      line-height: 1.4;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Freida B Rodrigues</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects & Skills</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Services</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Logo Design</h3>
+        <p>Creating minimalistic and memorable logos tailored to your brand identity.</p>
+      </div>
+      <div class="card">
+        <h3>Website Development</h3>
+        <p>Building responsive and visually appealing websites using modern technologies.</p>
+      </div>
+      <div class="card">
+        <h3>UI/UX Design</h3>
+        <p>Designing intuitive user interfaces and seamless user experiences.</p>
+      </div>
+      <div class="card">
+        <h3>Social Media Content</h3>
+        <p>Crafting engaging graphics and posts to boost your social media presence.</p>
+      </div>
+      <div class="card">
+        <h3>App Prototyping</h3>
+        <p>Developing interactive prototypes for your app ideas to validate and showcase concepts.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 Freida B Rodrigues. All rights reserved.
+  </footer>
+</body>
+</html>
